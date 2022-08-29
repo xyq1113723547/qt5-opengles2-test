@@ -32,6 +32,7 @@
 #include <QTouchEvent>
 #include <QMap>
 
+#include <QKeyEvent>
 #include <QOpenGLContext>
 #include <QSurfaceFormat>
 
