@@ -287,6 +287,11 @@ OpenGLES2Test::event(QEvent *event)
             focused = false;
             timerEvent(NULL); // render "backgrounded" state once
             break;
+         case QEvent::KeyPress:
+             if (dynamic_cast <QKeyEvent *> (event)->key() == Qt::Key_Escape) {
+                 QCoreApplication::quit();
+             }
+             break;
         default:
             /* do nothing */
             break;
